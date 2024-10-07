@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const scriptsFolder = '/Users/sreed/Documents/Scripting/scripts';
+const scriptsPath = path.join(__dirname, 'scripts');
 
 app.get('/scripts', (req, res) => {
     fs.readdir(scriptsFolder, (err, files) => {
