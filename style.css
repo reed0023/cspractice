@@ -1,0 +1,85 @@
+body {
+    background-color: black; /* Matrix-style dark background */
+    color: #0F0; /* Matrix-style green text */
+    font-family: 'Courier New', monospace; /* Monospaced font for a coding look */
+    text-align: left;
+    padding: 20px;
+}
+
+#app {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background-color: #000; /* Dark background for the app container */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow for the container */
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#status-bar-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#status-bar {
+    width: 200px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px; /* Creates space between percentage and bar */
+}
+
+#progress {
+    height: 100%;
+    background-color: #0F0; /* Green color to match Matrix theme */
+    width: 0%; /* Initial width */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+#progress-percentage {
+    color: #0F0; /* Green text to match Matrix theme */
+    margin-right: 5px; /* Adjust spacing as needed */
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+h1 {
+    color: #0F0; /* Matrix-style green text for the heading */
+}
+
+#script-container {
+    margin-bottom: 20px;
+    border: 1px solid #0F0; /* Green border */
+    background-color: #000; /* Dark background for the script container */
+    color: #0F0; /* Matrix-style green text */
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 33px;
+}
+
+#typed-text, #remaining-text {
+    color: #0F0; /* Matrix-style green text */
+}
+
+.flash {
+    animation: flash 1s infinite; /* Apply the flashing animation */
+    padding: 2px; /* Add some padding for better visibility */
+    background-color: rgb(255, 255, 255); /* Black background for the flashing character */
+    color: rgb(0, 0, 0); /* Green text for the flashing character */
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
